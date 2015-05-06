@@ -76,13 +76,23 @@ WSGI_APPLICATION = 'DjangoTutorial.wsgi.application'
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
 DATABASES = {
+   #============================================================================
+   # 'default': {
+   #      'ENGINE': 'django.db.backends.mysql',
+   #      'NAME': 'djangotutorial',
+   #      'USER': 'root',
+   #      'PASSWORD': 'root',
+   #      'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+   #      'PORT': '3306'
+   #  }
+   #============================================================================
    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangotutorial',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-        'PORT': '3306'
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'djangotutorial',                      
+        'USER': 'besil',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
